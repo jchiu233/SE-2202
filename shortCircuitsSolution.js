@@ -11,25 +11,25 @@
 // AND short-circuit
 let a = false;   // set to true
 let b = true;  // set to false
-let c = a && console.log("This will NOT print"); // returns false → console.log won't run
-let d = b && console.log("This will print");     // returns undefined → console.log will run
+let c = a && console.log("This will NOT print"); // returns false
+let d = b && console.log("This will print");     // returns undefined
 
 // OR short-circuit
 let f = true;   // set to true
 let g = false;  // set to false
 let h = true || console.log("This will NOT print"); // returns true
-let i = false || console.log("This will print");    // console.log runs → returns undefined
+let i = false || console.log("This will print");    
 
 // set t so that v contains "hello"
 // do not use true or false
-let t = 1; // any truthy value works (non-zero number, non-empty string, etc.)
+let t = 1; 
 let u = "hello"; 
-let v = t && u; // since t is truthy, v = u = "hello"
+let v = t && u; 
 
 // set x and y so that z contains 0
 // do not use true or false
-let x = 0;   // 0 is falsy
-let y = 0;   // also falsy, but OR picks the second if the first is falsy
+let x = 0;   
+let y = 0;   
 let z = x || y; // result is 0
 
 console.log(c); // false
@@ -38,5 +38,6 @@ console.log(h); // true
 console.log(i); // undefined
 console.log(v); // hello
 console.log(z); // 0
+
 
 
