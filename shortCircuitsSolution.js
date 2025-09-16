@@ -17,8 +17,8 @@ let d = b && console.log("This will print");     // returns undefined → consol
 // OR short-circuit
 let f = true;   // set to true
 let g = false;  // set to false
-let h = false || console.log("This will NOT print"); // returns true
-let i = true || console.log("This will print");    // console.log runs → returns undefined
+let h = true || console.log("This will NOT print"); // returns true
+let i = false || console.log("This will print");    // console.log runs → returns undefined
 
 // set t so that v contains "hello"
 // do not use true or false
@@ -38,4 +38,5 @@ console.log(h); // true
 console.log(i); // undefined
 console.log(v); // hello
 console.log(z); // 0
+
 
