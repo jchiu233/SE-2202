@@ -4,10 +4,10 @@ and understand conversions and basic comparison.
 */
 
 // remember that strings go in quotes
-let ageString = "17"; // set age to "18"
+let ageString = "17"; // set age to "17"
 
 // lets try again as a number
-let age = 17; // set age to 18
+let age = 17; // set age to 17
 
 // use a comparison (< or >) to determine if age is at least 18
 // note the variable type
@@ -34,4 +34,5 @@ console.log(typeof something); // undefined
 
 console.log(nothing);          // null
 console.log(typeof nothing);   // object
+
 
