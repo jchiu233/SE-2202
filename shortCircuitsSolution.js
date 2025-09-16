@@ -9,16 +9,16 @@
 */
 
 // AND short-circuit
-let a = true;   // set to true
-let b = false;  // set to false
+let a = false;   // set to true
+let b = true;  // set to false
 let c = a && console.log("This will NOT print"); // returns false → console.log won't run
 let d = b && console.log("This will print");     // returns undefined → console.log will run
 
 // OR short-circuit
 let f = true;   // set to true
 let g = false;  // set to false
-let h = true || console.log("This will NOT print"); // returns true
-let i = false || console.log("This will print");    // console.log runs → returns undefined
+let h = false || console.log("This will NOT print"); // returns true
+let i = true || console.log("This will print");    // console.log runs → returns undefined
 
 // set t so that v contains "hello"
 // do not use true or false
@@ -38,3 +38,4 @@ console.log(h); // true
 console.log(i); // undefined
 console.log(v); // hello
 console.log(z); // 0
+
